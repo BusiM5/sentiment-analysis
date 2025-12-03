@@ -2,3 +2,5 @@ streamlit
 textblob
 pandas
 matplotlib
+plotly
+scikit-learn
