@@ -9,7 +9,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 
 # Hugging Face API details
 API_URL = "https://api-inference.huggingface.co/models/cardiffnlp/twitter-roberta-base-sentiment"
-headers = {"Authorization": f"Bearer YOUR_HF_TOKEN"}  # Replace with your Hugging Face token
+headers = {"Authorization": f"Bearer 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"}  # Replace with your Hugging Face token
 
 # Function to call Hugging Face API
 def query(text):
