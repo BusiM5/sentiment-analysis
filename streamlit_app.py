@@ -1,31 +1,67 @@
 import streamlit as st
 from textblob import TextBlob
 import pandas as pd
+import matplotlib.pyplot as plt
 
-# Title
-st.title("Sentiment Dashboard")
-st.write("Enter some text below and see the sentiment analysis!")
+# Page configuration
+st.set_page_config(
+    page_title="Sentiment Dashboard",
+    page_icon="😊",
+    layout="wide"
+)
+
+# Title and description
+st.title("📊 Sentiment Dashboard")
+st.write("""
+Analyze the sentiment of your text!  
+Type or paste multiple sentences, and see the overall sentiment distribution.
+""")
 
 # Text input
-user_input = st.text_area("Type your text here:")
+user_input = st.text_area("Type your sentences here (separate by period):")
 
 if user_input:
-    # Analyze sentiment
-    blob = TextBlob(user_input)
-    polarity = blob.sentiment.polarity
-
-    # Determine sentiment
-    if polarity > 0:
-        sentiment = "Positive"
-    elif polarity < 0:
-        sentiment = "Negative"
-    else:
-        sentiment = "Neutral"
-
-    # Show results
-    st.write(f"**Sentiment:** {sentiment}")
-    st.write(f"**Polarity score:** {polarity}")
-
-    # Optional: show a simple chart
-    df = pd.DataFrame({"Polarity": [polarity]})
-    st.bar_chart(df)
+    # Split input into sentences
+    sentences = [s.strip() for s in user_input.split('.') if s.strip()]
+    
+    results = []
+    for sentence in sentences:
+        blob = TextBlob(sentence)
+        polarity = blob.sentiment.polarity
+        if polarity > 0:
+            sentiment = "Positive"
+        elif polarity < 0:
+            sentiment = "Negative"
+        else:
+            sentiment = "Neutral"
+        results.append({"Sentence": sentence, "Sentiment": sentiment, "Polarity": polarity})
+    
+    # Convert to DataFrame
+    df = pd.DataFrame(results)
+    
+    # Display table
+    st.subheader("Sentences and Sentiment")
+    st.dataframe(df, use_container_width=True)
+    
+    # Calculate sentiment counts
+    sentiment_counts = df['Sentiment'].value_counts()
+    
+    # Plot pie chart
+    st.subheader("Sentiment Distribution")
+    fig, ax = plt.subplots()
+    ax.pie(
+        sentiment_counts, 
+        labels=sentiment_counts.index, 
+        autopct='%1.1f%%', 
+        startangle=90, 
+        colors=['#66b3ff','#ff9999','#99ff99']
+    )
+    ax.axis('equal')  # Equal aspect ratio ensures pie chart is circular
+    st.pyplot(fig)
+    
+    # Summary
+    st.subheader("Summary")
+    st.write(f"Total sentences: {len(sentences)}")
+    st.write(f"Positive: {sentiment_counts.get('Positive', 0)}")
+    st.write(f"Negative: {sentiment_counts.get('Negative', 0)}")
+    st.write(f"Neutral: {sentiment_counts.get('Neutral', 0)}")
