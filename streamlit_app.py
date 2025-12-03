@@ -132,10 +132,6 @@ elif section == "Metrics":
 
 st.sidebar.info("Replace 'YOUR_HF_TOKEN' with your Hugging Face API token before running.")
 
-    
-    # Convert to DataFrame
-    df = pd.DataFrame(results)
-    
     # Display table
     st.subheader("Sentences and Sentiment")
     st.dataframe(df, use_container_width=True)
