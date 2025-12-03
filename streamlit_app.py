@@ -132,9 +132,11 @@ elif section == "Metrics":
 
 st.sidebar.info("Replace 'YOUR_HF_TOKEN' with your Hugging Face API token before running.")
 
-    # Display table
-    st.subheader("Sentences and Sentiment")
-    st.dataframe(df, use_container_width=True)
+    # Display table   
+df = pd.DataFrame(results)
+st.subheader("Sentences and Sentiment")
+st.dataframe(df, use_container_width=True)
+
     
     # Calculate sentiment counts
     sentiment_counts = df['Sentiment'].value_counts()
