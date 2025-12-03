@@ -18,10 +18,7 @@ Type or paste multiple sentences, and see the overall sentiment distribution.
 """)
 
 # Text input
-user_input = st.text_area(
-    "Enter your text",           # Label shown above the box
-    height=150,                  # How tall the box is (in pixels)
-    value="..."  # Default text already inside
+user_input = st.text_area( "Type your sentences here (separate by period):"
 )
 
 if user_input:
