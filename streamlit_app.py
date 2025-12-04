@@ -65,3 +65,23 @@ if user_input:
     st.write(f"Positive: {sentiment_counts.get('Positive', 0)}")
     st.write(f"Negative: {sentiment_counts.get('Negative', 0)}")
     st.write(f"Neutral: {sentiment_counts.get('Neutral', 0)}")
+
+import pandas as pd
+import streamlit as st
+
+st.title("Sentiment Analysis Dashboard")
+
+# Load predictions CSV
+df = pd.read_csv("data/sentiment_predictions_with_confidence.csv")
+
+# Show predictions table
+st.subheader("Predictions Table")
+st.dataframe(df[['Text', 'Expected Sentiment', 'Predicted Sentiment', 'Confidence']])
+
+# Sentiment distribution chart
+st.subheader("Sentiment Distribution")
+st.bar_chart(df['Predicted Sentiment'].value_counts())
+
+# Confidence histogram
+st.subheader("Confidence Histogram")
+st.bar_chart(df['Confidence'])
