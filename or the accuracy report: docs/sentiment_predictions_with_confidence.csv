@@ -1,0 +1,52 @@
+Sentence ,Expected Sentiment,Predicted Sentiment,Confidence
+I absolutely love this product! It exceeded my expectations,Positive,Positive,0.625
+"The service was fantastic, and the staff was so friendly",Positive,Positive,0.3875
+"Great experience overall, I’ll definitely come back",Positive,Positive,0.2
+The app is super easy to use and very helpful,Positive,Positive,0.3222222222222222
+I’m impressed with the quality and attention to detail,Positive,Positive,1
+This is the best purchase I’ve made this year! The food was delicious and the atmosphere was amazing,Positive,Positive,0.8666666666666667
+I appreciate how quickly the support team resolved my issue,Positive,Positive,0.3333333333333333
+"Everything worked perfectly, couldn’t be happier",Positive,Positive,1
+Highly recommend this to anyone looking for great value,Positive,Positive,0.48000000000000004
+Absolutely thrilled with the new update! The packaging was beautiful and eco-friendly,Positive,Positive,0.5401515151515152
+I’m so happy with the fast delivery,Positive,Positive,0.5
+The team went above and beyond to help me,Positive,Neutral,0
+Everything was perfect from start to finish,Positive,Positive,1
+"The design is sleek and modern, I love it",Positive,Positive,0.35
+"Great customer experience, very professional",Positive,Positive,0.465
+"The product works flawlessly, highly satisfied",Positive,Positive,0.5
+I’m impressed by the attention to detail,Positive,Positive,1
+The new feature is a game-changer! Fantastic quality for the price,Positive,Positive,0.2852272727272727
+The instructions were clear and easy to follow,Positive,Positive,0.26666666666666666
+I’ll definitely recommend this to my friends,Positive,Neutral,0
+The colors are vibrant and beautiful,Positive,Positive,0.5083333333333333
+The app runs smoothly without any glitches,Positive,Positive,0.4
+I appreciate the quick response from support,Positive,Positive,0.3333333333333333
+The event was well-organized and enjoyable,Positive,Positive,0.5
+The performance exceeded my expectations,Positive,Neutral,0
+"Everything looks amazing, great job! I couldn’t be happier with this purchase",Positive,Positive,0.8
+Loving the new update! Great job team,Positive,Positive,0.5234848484848484
+"Amazing design, but the battery life is disappointing",Positive,Positive,5.551115123125783e-17
+"The movie was entertaining, though a bit too long",Positive,Positive,0.225
+"I’m happy with the product, but shipping took forever",Positive,Positive,0.8
+"Great concept, but execution needs improvement",Positive,Positive,0.8
+"The hotel was beautiful, but the staff seemed disorganized",Positive,Positive,0.85
+"I like the features, but the price is too high",Positive,Positive,0.16
+"The concert was fun, though the sound system could be better",Positive,Positive,0.39999999999999997
+"Fantastic experience, will come again",Positive,Positive,0.4
+The new update improved everything significantly,Positive,Positive,0.2556818181818182
+I’m very disappointed with the product quality,Positive,Negative,-0.9750000000000001
+The customer service was rude and unhelpful,Positive,Negative,-0.3
+"This app crashes all the time, very frustrating",Positive,Negative,-0.52
+The delivery was late and the package was damaged,Positive,Negative,-0.3
+"I regret buying this, it’s a waste of money",Negative,Negative,-0.2
+The experience was terrible from start to finish,Negative,Negative,-1
+"Nothing worked as advertised, completely misleading",Negative,Positive,0.1
+The food was cold and tasted awful,Negative,Negative,-0.8
+"I had to wait forever for assistance, unacceptable",Negative,Neutral,0
+"Worst experience ever, I will never use this again",Negative,Negative,-1
+"The product broke after one use, very poor quality",Negative,Negative,-0.52
+I’m extremely dissatisfied with the service,Negative,Negative,-0.125
+The app is full of bugs and crashes constantly,Negative,Positive,0.175
+The instructions were confusing and unclear,Negative,Negative,-0.3
+The delivery was delayed without any explanation,Negative,Neutral,0
