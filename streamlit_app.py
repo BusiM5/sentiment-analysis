@@ -84,8 +84,6 @@ st.bar_chart(df['Predicted Sentiment'].value_counts())
 
 
 
-# File upload
-uploaded_file = st.file_uploader("Or upload a text file (.txt or .csv)", type=["txt", "csv"])
 
 
 
