@@ -87,14 +87,5 @@ st.bar_chart(df['Predicted Sentiment'].value_counts())
 # File upload
 uploaded_file = st.file_uploader("Or upload a text file (.txt or .csv)", type=["txt", "csv"])
 
-if uploaded_file is not None:
-    # If CSV, read with pandas
-    if uploaded_file.name.endswith(".csv"):
-        df_file = pd.read_csv(uploaded_file)
-        # Assume the first column has text
-        text_data = df_file.iloc[:, 0].tolist()
-        user_input = ". ".join(text_data)
-    else:  # txt file
-        text_data = uploaded_file.read().decode("utf-8")
-        user_input = text_data
+
 
