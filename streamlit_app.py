@@ -82,9 +82,7 @@ st.dataframe(df[['Text', 'Expected Sentiment', 'Predicted Sentiment', 'Confidenc
 st.subheader("Sentiment Distribution")
 st.bar_chart(df['Predicted Sentiment'].value_counts())
 
-# Confidence histogram
-st.subheader("Confidence Histogram")
-st.bar_chart(df['Confidence'])
+
 
 # File upload
 uploaded_file = st.file_uploader("Or upload a text file (.txt or .csv)", type=["txt", "csv"])
