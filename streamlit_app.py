@@ -11,15 +11,14 @@ st.set_page_config(
 )
 
 # Title and description
-st.title("📊 Code Crusaders Sentiment Dashboard")
+st.title("📊 Sentiment Dashboard")
 st.write("""
 Analyze the sentiment of your text!  
 Type or paste multiple sentences, and see the overall sentiment distribution.
 """)
 
 # Text input
-user_input = st.text_area( "Type your sentences here (separate by period):"
-)
+user_input = st.text_area("Type your sentences here (separate by period):")
 
 if user_input:
     # Split input into sentences
