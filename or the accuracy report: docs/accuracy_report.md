@@ -14,7 +14,7 @@ nano docs/accuracy_report.md
 
 This dataset includes customer-style reviews and statements, balanced across Positive and Negative classes, with a moderate Neutral portion.
 
----
+
 
 ## Metrics (Lexicon Baseline)
 - **Accuracy:** 82.7%
@@ -25,7 +25,7 @@ This dataset includes customer-style reviews and statements, balanced across Pos
 - **Weighted Recall:** 0.827  
 - **Weighted F1-score:** 0.834  
 
----
+
 
 ### Per-Class Performance
 | Class     | Precision | Recall | F1  |
@@ -34,7 +34,7 @@ This dataset includes customer-style reviews and statements, balanced across Pos
 | Neutral   | 0.650     | 0.867  | 0.743 |
 | Negative  | 1.000     | 0.825  | 0.904 |
 
----
+
 
 ### Confusion Matrix
 |           | Pred_Pos | Pred_Neu | Pred_Neg |
@@ -43,7 +43,7 @@ This dataset includes customer-style reviews and statements, balanced across Pos
 | True_Neu  | 4        | 26       | 0        |
 | True_Neg  | 1        | 6        | 33       |
 
----
+
 
 ## Discussion of API Limitations
 
