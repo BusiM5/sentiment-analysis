@@ -138,7 +138,6 @@ else:
 import pandas as pd
 import streamlit as st
 
-st.title("Sentiment Analysis Dashboard")
 
 # Load predictions CSV
 df = pd.read_csv("data/sentiment_predictions_with_confidence.csv")
