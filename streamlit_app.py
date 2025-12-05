@@ -141,7 +141,7 @@ import streamlit as st
 st.title("Sentiment Analysis Dashboard")
 
 # Load predictions CSV
-df = pd.read_csv("sentiment_predictions_with_confidence.csv")
+df = pd.read_csv("or the accuracy report: docs/sentiment_predictions_with_confidence.csv")
 
 # Show predictions table
 st.subheader("Predictions Table")
