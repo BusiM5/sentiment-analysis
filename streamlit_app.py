@@ -28,7 +28,7 @@ import json
 import time
 
 st.set_page_config(page_title="Code Crusaders - CAPACITI", layout="wide")
-st.title("Code Crusaders – CAPACITI Week 5: AI in Action")
+st.title("Code Crusaders – 📊 Sentiment Dashboard")
 st.markdown("**Multi-class • Confidence • Keyword Highlighting • Batch Upload • CSV/JSON/PDF Export**")
 
 # ---------- Sidebar: settings ----------
